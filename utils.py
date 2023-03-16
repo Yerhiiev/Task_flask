@@ -55,7 +55,6 @@ def get_pb_exchange_rate(convert_currency: str,
                 b = rate_date[3:5]
                 c = rate_date[6:10]
                 new_date = str(a) + '.' + str(b) + '.' + str(c)
-                print(new_date)
                 return new_date
             elif len(rate_date) == 8:
                 a1 = rate_date[0:2]
@@ -65,7 +64,6 @@ def get_pb_exchange_rate(convert_currency: str,
                 print(new_date)
                 return new_date
             else:
-                print('Invalid date format')
     params = {
         'json': '',
         'date': valid_date(),
